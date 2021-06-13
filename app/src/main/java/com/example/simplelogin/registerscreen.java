@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class registerscreen extends AppCompatActivity {
     Button register;
@@ -31,6 +32,7 @@ public class registerscreen extends AppCompatActivity {
                 intent.putExtra("phone",myphone.getText().toString());
                 intent.putExtra("password",mypassword.getText().toString());
                 startActivity(intent);
+                Toast.makeText(registerscreen.this,"Register Sucessfully",Toast.LENGTH_LONG).show();
             }
         });
     }
